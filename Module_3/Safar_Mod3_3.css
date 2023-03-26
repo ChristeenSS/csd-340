@@ -1,0 +1,52 @@
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+h1 {
+    text-align:center;
+}
+
+.div_1 {
+    font-weight: 500;
+    width: 45%;
+    float: left;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: red;
+    padding: 10px;
+}
+.div_2 {
+    font-weight: 500;
+    width: 45%;
+    float: right;
+    border: 1px dashed;
+    border-radius: 15px;
+    border-color: red;
+    padding: 10px;
+}
+.div_3 {
+    width: 100%;
+    margin-top: 60%;
+}
+.div_4 {
+    float: right;
+    margin-bottom: 20px;
+}
+ul {
+    font-weight: 300;
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+ol {
+    font-weight: 300;
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none;
+    float: right;
+    margin-bottom: 20px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
