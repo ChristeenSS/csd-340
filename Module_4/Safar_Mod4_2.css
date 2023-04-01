@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(132, 18, 56, 0.2);
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: rgb(207, 62, 140);
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: rgba(207, 62, 140);
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    color: rgba(207, 62, 140);
+}
+
+
+img {
+    width: 400px;
+    height: 350px;
+}
+
+#image-gallery {
+    display: grid;
+    margin-top: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
