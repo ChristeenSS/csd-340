@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+</header>
+<head>
+    
+    <meta name="description" content="Assignment 9.3: JavaScript - Part 1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Christeen Safar">
+    <meta name="robots" content="nofollow">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="Safar_Module 9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+      var firstVariable = "Books";
+    </script>
+    <script>
+      var secondVariable = "Novels";
+    </script>
+    <script>
+      var thirdVariable = "Authors";
+    </script>
+    <script>
+      var fourthVariable = "Quotes";
+    </script>
+    <script>
+        function replaceText() {
+            document.getElementById('Books').innerHTML = "Books";
+        }
+    </script>
+    <script>
+        function replaceText2() {
+            document.getElementById('Novels').innerHTML = "Novels";
+        }
+    </script>
+    <script>
+        function replaceText3() {
+            document.getElementById('Authors').innerHTML = "Authors";
+        }
+    </script>
+    <script>. </p>
+        function replaceText4() {
+            document.getElementById('Quotes').innerHTML = "Quotes";
+        }
+    </script>
+</head>
+<body>
+
+
+<div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>Introduction</h2>
+        <p class="intro">Reading <span id = "Books">_________</span> is not just a hobby. </p>
+        <p> My name is Christeen. I love reading books. I started to read books at an early age. </p>
+        <p> I love all kinds of books, especially <span id = "Novels">_________</span>. The first novel book that I ever read was little women by Louisa May Alcott. </p>
+        <p> When I was young, I used to read a lot without stopping. If I started to read a book, I will never stop reading until I finish it My favorite <span id = "Authors">_________</span> are Fyodor Dostoevsky, Nikos Kazantzakis, Jane Austen, Margaret Mitchell, Isabel Allende, and plenty more.  </p>
+        <p> One of my favorites <span id = "Quotes">_________</span> in one of Dostoevsky's books called Brothers Karamazov, "Love all God’s creation, both the whole and every grain of sand. Love every leaf, every ray of light. Love the animals, love the plants, love each separate thing. If thou love each thing, thou wilt perceive the mystery of God in all; and when once thou perceive this, thou wilt thenceforward grow every day to a fuller understanding of it: until thou come at last to love the whole world with a love that will then be all-embracing and universal”.  </p>
+        <hr>
+        <address>
+
+       
+            <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bllevue, NE 68005</p>
+        </address>
+    </div>
+    <div id="button-container">
+      <button type="button" onclick="replaceText()">Books</button>
+      <button type="button" onclick="replaceText2()">Novels</button>
+      <button type="button" onclick="replaceText3()">Authors</button>
+      <button type="button" onclick="replaceText4()">Quotes</button>
+    </div>
+</body>
+</html>
