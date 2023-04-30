@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+      </div>
+    </header>
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+    </script>
+     <link rel="stylesheet" href="Safar_mod10.3.css">
+
+ </head>
+
+  <body>
+    <br />
+    <div>
+      <a href=#
+         onmouseover="road.src='road_1.jpg';"
+         onmouseout= "road.src='road_2.jpg';"
+      >
+        <img border = 0 name = "road" src = "road_2.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+
+    </div>
+    <div>
+      <a href=#
+         onmouseover="winter.src='winter_1.jpg';"
+         onmouseout= "winter.src='winter_2.jpg';"
+      >
+        <img border = 0 name = "winter" src = "winter_2.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      Right-click and select View Source for more details.
+
+    </div>
+
+  </body>
+
+</html>
