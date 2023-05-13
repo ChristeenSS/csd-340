@@ -1,0 +1,60 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>CSD 340 Web Development with HTML and CSS</title>
+      <link rel="stylesheet" href="Safar_mod12_2.css">
+    </head>
+    <body>
+      <header>
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <a href="../index.html" class="index">Home</a>
+      </header>
+      <div class="left-div">
+        <h3>Top 10 Favorite Books</h3>
+        <ol>
+          <li>Pride and Prejudice</li>
+          <li>Gone with the Wind</li>
+          <li>Brothers Karamazov</li>
+          <li>Saint Francis</li>
+          <li>Jane Eyre</li>
+          <li>The Sound of the Music</li>
+          <li>Gertrude</li>
+          <li>Thais</li>
+          <li>Zorba the Greek</li>
+          <li>Report to Greco</li>
+        </ol>
+        <div>
+          <button onclick="sortBooksAsc()">Top to Bottom</button>
+          <button onclick="sortBooksDesc()">Bottom to Top</button>
+        </div>
+      </div>
+      <script>
+        const bookList = Array.from(document.querySelectorAll('.left-div li')).map(li => li.textContent);
+
+        function sortBooksAsc() {
+          bookList.sort();
+          displayBooks();
+        }
+
+        function sortBooksDesc() {
+          bookList.sort((a, b) => b.localeCompare(a));
+          displayBooks();
+        }
+
+        function displayBooks() {
+          const bookListElement = document.querySelector('.left-div ol');
+          bookListElement.innerHTML = bookList.map(book => `<li>${book}</li>`).join('');
+        }
+      </script>
+      <div class = "right-div">
+        <h3>Five Things I have Learned Since the Course Started</h3>
+        <ul>
+          <li>How to develop web pages using HTML and CSS</li>
+          <li>How to design, document, and debug HTML</li>
+          <li>How to critique web page design elements to promote alignment with contemporary style</li>
+          <li>How to write HTML, and CSS codes</li>
+          <li>How to use HTML tools</li>
+        </ul>
+      </div>
+    </body>
+  </html>
